@@ -1,0 +1,350 @@
+/* CSS Reset Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.all-courses {
+  display: flex;
+  gap: 1.25rem;
+}
+/* CSS Reset End */
+
+/* Header Start */
+header {
+  padding: 20px 0;
+  background-color: #2c3e50;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #ecf0f1;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+  list-style: none;
+  margin-top: 1.25rem;
+}
+header nav ul a {
+  color: #ecf0f1;
+  font-size: 1.1875rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 300ms all;
+}
+header nav ul a:hover {
+  border-bottom: 2px solid #ecf0f1;
+}
+/* Header End */
+
+/* Main Start */
+main {
+  padding: 20px 0;
+  background-color: #ecf0f1;
+}
+/* Hero Start */
+.hero {
+  text-align: center;
+  padding: 40px 0;
+  margin: 20px 0;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #ecf0f1;
+  background-color: #3498db;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 1.1875rem;
+  border-radius: 4px;
+  transition: 300ms all;
+}
+.hero .btn:hover {
+  background-color: #0869a9;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+/* Hero End */
+/* Courses Start */
+.courses {
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.courses .container h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+.course {
+  display: flex;
+  padding: 20px 0;
+  margin: 20px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 300ms all;
+}
+.course:hover {
+  border: 1px solid #2c3e50;
+}
+.course img {
+  max-width: 12.5rem;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+.course-info {
+  margin: 0 10px;
+}
+.course-info h3 {
+  color: #2c3e50;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+.course-info p {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+/* Courses End */
+/* Main End */
+/* Footer Start */
+footer {
+  padding: 10px 0;
+  background-color: #2c3e50;
+  text-align: center;
+  color: #ecf0f1;
+}
+.contact h2 {
+  font-size: 2.25rem;
+  letter-spacing: 3px;
+  margin: 10px 0;
+}
+.contact nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 40px 0;
+  list-style: none;
+}
+.contact ul a {
+  background-color: #ecf0f1;
+  padding: 16px 32px;
+  text-decoration: none;
+  border-radius: 4px;
+  position: relative;
+  transition: 300ms all;
+}
+.contact ul a:hover {
+  transform: scale(1.2);
+}
+.contact ul img {
+  max-width: 32px;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+.contact ul img:hover {
+  transform: scale(1.1);
+}
+.contact p {
+  font-size: 1.1875rem;
+}
+/* Footer End */
+
+/* CSS Responsive Start */
+@media (min-width: 320px) and (max-width: 680px) {
+  /* Header Start */
+  header {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  header nav ul a {
+    font-size: 1.125rem;
+  }
+  /* Header End */
+
+  /* Hero Start */
+  .hero h2 {
+    font-size: 1.625rem;
+  }
+  .hero .btn {
+    padding: 8px 16px;
+    font-size: 1.0625rem;
+  }
+  .hero p {
+    font-size: 1.125rem;
+  }
+  /* Hero End */
+
+  /* Main Start */
+  .all-courses {
+    display: flex;
+    flex-direction: column;
+  }
+  .courses {
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  .courses .container h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .course {
+    display: flex;
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+  .course img {
+    width: 6.25rem;
+    margin: 0 10px;
+  }
+  .course-info h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+  }
+  .course-info p {
+    font-size: 1.0625rem;
+    margin: 10px 0;
+  }
+  .course-info {
+    margin: 0 5px;
+  }
+  /* Main End */
+  /* Footer Start */
+  .contact h2 {
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+  .contact ul a {
+    padding: 12px 24px;
+  }
+  .contact ul img {
+    max-width: 24px;
+    text-align: center;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+  }
+  .contact p {
+    font-size: 1.0625rem;
+  }
+  /* Footer End */
+}
+@media (min-width: 681px) and (max-width: 1040px) {
+  /* Header Start */
+  header {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 2.25rem;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  header nav ul a {
+    font-size: 1.1875rem;
+  }
+  /* Header End */
+
+  /* Hero Start */
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero .btn {
+    padding: 12px 24px;
+    font-size: 1.1875rem;
+  }
+  .hero p {
+    font-size: 1.25rem;
+  }
+  /* Hero End */
+
+  /* Main Start */
+  .all-courses {
+    display: flex;
+    flex-direction: column;
+  }
+  .courses {
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  .courses .container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .course {
+    display: flex;
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+  .course img {
+    width: 11.25rem;
+    margin: 0 10px;
+  }
+  .course-info h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  .course-info p {
+    font-size: 1.1875rem;
+    margin: 10px 0;
+  }
+  .course-info {
+    margin: 0 10px;
+  }
+  /* Main End */
+  /* Footer Start */
+  .contact h2 {
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+  .contact ul a {
+    padding: 16px 32px;
+  }
+  .contact ul img {
+    max-width: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 9px;
+    left: 15px;
+  }
+  .contact p {
+    font-size: 1.125rem;
+  }
+  /* Footer End */
+}
+/* CSS Responsive End */
